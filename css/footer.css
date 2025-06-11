@@ -1,0 +1,55 @@
+/* footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+.footer-cm {
+  width: 100%;
+  background: #1f818c;
+  padding: 0;
+}
+
+.footer-container {
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.footer-left .footer-logo {
+  height: 40px;
+  width: auto;
+}
+
+.footer-center {
+  text-align: center;
+  font-size: 14px;
+
+}
+.footer-center p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
+}
+
+.footer-icon:hover {
+filter: invert(94%) sepia(2%) saturate(210%) hue-rotate(24deg) brightness(104%) contrast(97%);
+}

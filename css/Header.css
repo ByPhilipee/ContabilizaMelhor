@@ -1,0 +1,97 @@
+/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2eb;
+  height: 70px;
+  padding: 0 32px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* <-- Adicione esta linha */
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: none;
+}
+header.header-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.144);
+}
+
+.header-spacer {
+  height: 70px; /* igual à altura do header */
+}
+.header-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+header img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center; /* Garante alinhamento vertical */
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: Lato;
+  color: #0d0d0d;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.5s, transform 0.5s;
+}
+
+header nav ul li a:hover {
+  color: rgba(41, 14, 82, 1);
+  font-weight: 500;
+
+}
+/* Portal do Cliente */
+.portal-container {
+  background: #1f818c; /* Cor de fundo */
+  border-radius: 10px;  /* Bordas arredondadas */
+  transition: color 0.5s, transform 0.5s;
+}
+.portal-container a {
+  color: #fff !important;
+  padding: 10px 18px;      /* Espaçamento interno no link */
+  display: inline-block;
+  border-radius: 10px;
+  transition: background 0.8s, color 0.8s;
+}
+
+
+.portal-container a:hover {
+  background: #156169;         /* Cor de fundo ao passar o mouse */
+  color: #fff !important;   /* Cor do texto ao passar o mouse */
+}
+
+/* Logo */
+.logo-container {
+height: 50px; /* Altura do container */
+}

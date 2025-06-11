@@ -1,0 +1,102 @@
+/* section4.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+/* Adicione ao seu arquivo de CSS, por exemplo section2.css ou um novo */
+.planos-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+  background: #f2f2eb;
+}
+
+.planos-container {
+  background: #fff;
+  width: 1200px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* <-- ajuste aqui */
+  gap: 48px;
+  padding: 48px 0;
+  margin: 0 auto;
+}
+
+.plano-box {
+  background: #f2f2eb;
+  width: 550px;
+  border-radius: 12px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plano-titulo {
+  color: #1f818c;
+  background-color: #f2f2eb;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom:30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.plano-lista {
+  list-style: none;
+  color: ;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+    align-items: center;
+}
+
+
+.plano-lista li {
+  color: #1f818c;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: left;
+  line-height: 1.7;
+    position: relative;
+  padding-left: 32px;
+
+}
+.plano-lista li::before {
+  content: "✔";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  color: #1f818c; /* Ou outro tom de verde */
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* botao do plano */
+.btn-plano-basico {
+  display: inline-block;
+  margin-top: 16px;
+  background-color: #1f818c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, scale 0.3s ease;
+  text-align: center;
+}
+.btn-plano-basico:hover {
+  scale: 1.05;
+}

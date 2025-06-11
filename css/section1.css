@@ -1,0 +1,47 @@
+/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+.bg-branco {
+    background-color: #f2f2eb;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+    width: 100%;
+    padding: 20px 0;
+    min-height: 250px;
+    overflow: hidden; /* Prevent the pseudo-element from overflowing */
+}
+.servicos-section1{
+    position: relative;
+    margin-top: 0px;
+    font-family: "lato";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+.servicos-section1 h1{
+font-size: 50px;
+font-weight: 300;
+margin-bottom: 0;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.18); /* sombra projetada */
+}
+.servicos-section1 p {
+    font-size: 20px;
+    font-weight: 350;
+    margin-top: 15px;
+}
+.servicos-section1 h1 .destaque {
+    color: #1f818c;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #bf999952; /* sombra projetada */
+}
+.bg-cinza{
+    background-color: #cfcf12;
+    min-height: 1000px;
+    
+}

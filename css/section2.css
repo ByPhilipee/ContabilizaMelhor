@@ -1,0 +1,99 @@
+/* section2.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+.servicos-section2 {
+background-color: #fff;
+padding: 20px;
+margin: 0;
+max-width: 1200px;
+border-radius: 10px;
+
+}
+.quatro-boxes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; /* Remove a margem */
+  background-color: #f2f2eb;
+  padding: 20px 0;
+}
+
+.quatro-boxes-titulo {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 5px;
+  color: #1f818c;
+  text-align: center;
+}
+
+.quatro-boxes-subtitulo {
+  font-size: 20px;
+  color: #444;
+margin: 5px;
+margin-bottom: 15px;
+  text-align: center;
+}
+
+.quatro-boxes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  max-width: 100%;
+  gap: 24px;
+  padding: 0 12px;
+}
+
+.quatro-box {
+  flex: 1 1 0;
+  height: 250px;
+  background: #f2f2eb;
+  border: 3px solid #1f818c;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Alinha topo e base */
+  font-weight: 600;
+  font-size: 18px;
+  color: #1f818c;
+  padding: 18px 0; /* Espaço interno para afastar do topo/base */
+}
+
+.box-titulo{
+    font-size: 24px;
+    margin: 0;
+    padding: 0 20px;
+}
+.box-texto {
+  margin: 0;
+  padding: 0 20px 0 20px;
+  color: #222;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* botao MEI */
+.btn-transforme-mei {
+  background-color: #1f818c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-transforme-mei:hover {
+  background-color: #16616d;
+}
