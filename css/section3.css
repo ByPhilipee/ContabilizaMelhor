@@ -94,13 +94,14 @@ margin-bottom: 20px;
 }
 /* adicionando imagens de fundo */
 .cidade-img {
-    width: 180px;         /* tamanho fixo */
-    height: 180px;        /* tamanho fixo */
+    width: 180px;         /* ou o tamanho desejado */
+    height: 180px;
     object-fit: cover;
-    border-radius: 15%;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    flex-shrink: 0;       /* impede de encolher em flexbox */
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto 16px auto;
 }
 /* botando fundo no texto */
 .cidade-item h3 {
