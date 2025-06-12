@@ -65,8 +65,8 @@ margin-bottom: 20px;
     position: relative;
 }
 .cidade-item {
-    min-height: 300px;
-    height: 300px;
+    min-height: 220px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,7 +79,6 @@ margin-bottom: 20px;
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url('/img/cidade-bg.jpg');
     background: #f2f2eb;
     border-radius: 12px;
     padding: 20px;
@@ -94,14 +93,14 @@ margin-bottom: 20px;
 }
 /* adicionando imagens de fundo */
 .cidade-img {
-    width: 180px;         /* ou o tamanho desejado */
+    width: 180px;
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    max-width: 100%;
-    max-height: 100%;
     display: block;
     margin: 0 auto 16px auto;
+    max-width: 180px;
+    max-height: 180px;
 }
 /* botando fundo no texto */
 .cidade-item h3 {
