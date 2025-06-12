@@ -5,41 +5,114 @@
     box-sizing: border-box;
     font-family: 'lato';
 }
-.servicos-section3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f2f2f2;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 20px 0;
+.section-cidades {
+    background: #f2f2eb;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
 }
-
-.servicos3-titulo {
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #1f818c;
+.cidades-box {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
 }
-
-.servicos3-box {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  padding: 32px;
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-    margin-bottom: 32px;
+.cidades-titulo {
+    font-size: 1.6rem;
+    margin-top: 0px;
+margin-bottom: 20px;
+    color: #1f818c;
 }
+.cidades-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+.carousel-btn {
+    background: #1f818c;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    margin: 0 8px;
+    outline: none;
+}
+.carousel-btn:hover, .carousel-btn:focus {
+    background: #16636b;
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(31,129,140,0.18);
+}
+.carousel-btn svg {
+    display: block;
+}
+.carousel-track {
+    width: 320px;
+    min-height: 140px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.cidade-item {
+    min-height: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+    min-width: 100%;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s, transform 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('/img/cidade-bg.jpg');
+    background: #f2f2eb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    z-index: 1;
+}
+.cidade-item.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+    position: relative;
+}
+/* adicionando imagens de fundo */
+.cidade-img {
+    width: 180px;         /* tamanho fixo */
+    height: 180px;        /* tamanho fixo */
+    object-fit: cover;
+    border-radius: 15%;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    flex-shrink: 0;       /* impede de encolher em flexbox */
+}
+/* botando fundo no texto */
+.cidade-item h3 {
 
-.servicos3-box p {
-  margin: 0;
-  color: #222;
-  font-size: 18px;
-  line-height: 1.6;
+    display: inline-block;
+    padding: 4px 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #1f818c;
+    font-size: 1.2rem;
+}
+.cidade-item p {
+margin: 0px;
+padding: 0px;
 }

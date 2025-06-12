@@ -9,25 +9,124 @@
     background-color: #f2f2eb;
     position: relative; /* Ensure the pseudo-element is positioned relative to this container */
     width: 100%;
-    padding: 20px 0;
+    padding: 0;
     min-height: 250px;
     overflow: hidden; /* Prevent the pseudo-element from overflowing */
 }
 .servicos-section1{
+    
     position: relative;
     margin-top: 0px;
+    padding: 0;
     font-family: "lato";
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
+    height: 450px;      /* altura fixa para todo o conteúdo */
+    min-height:450px; 
+    padding: 12px;
+}
+/* background img */
+.servicos-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* garante que ambos ocupem a mesma altura */
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+/* texto sob a imagem */
+.servicos-bg-texto {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 40px;
+    z-index: 2;
+    height: 100%;      /* garante altura igual */
+    min-height: unset; /* remove min-height diferente */
+}
+.servicos-bg-texto h1,
+.servicos-bg-texto p {
+    background: rgba(255,255,255,0.92);
+    padding: 6px 18px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    color: #222;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: inline-block;
+}
+/* IMAGEM */
+.servicos-bg-imagem {
+    flex: 1 1 130%;
+    width: 100%;
+    height: 100%;      /* garante altura igual */
+    min-height: unset; 
+    margin: 0;
+    background-color: #1f818c;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-mask-image: url('/img/mask9.png');
+    mask-image: url('/img/mask9.png');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+    position: relative;
+}
+.imagem-centralizada {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    display: block;
+    margin-right: 10%;
+    margin-bottom: 25%;
+}
+/* imagem mosaico */
+.servicos-bg-imagem::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/img/Contabiliza\ MelhorFundoMosaico2.svg'); /* troque pelo caminho da sua imagem */
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+/* Adicione este bloco para o desfoque */
+.servicos-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    filter: blur(3px); /* ajuste o valor conforme desejar */
+    z-index: 0;
 }
 .servicos-section1 h1{
 font-size: 50px;
 font-weight: 300;
 margin-bottom: 0;
 text-shadow: 1px 1px 1px rgba(0,0,0,0.18); /* sombra projetada */
+
 }
 .servicos-section1 p {
     font-size: 20px;

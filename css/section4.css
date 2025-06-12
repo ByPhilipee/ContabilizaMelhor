@@ -9,8 +9,9 @@
 .planos-section {
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 48px 0;
+  flex-direction: column; /* <-- importante para alinhar em coluna */
+  align-items: center;    /* <-- centraliza tudo na seção */
+  padding: 20px 0;
   background: #f2f2eb;
 }
 
@@ -21,10 +22,10 @@
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /* <-- ajuste aqui */
-  gap: 48px;
-  padding: 48px 0;
+  flex-direction: column;      /* muda para coluna */
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
   margin: 0 auto;
 }
 
@@ -43,7 +44,7 @@
   background-color: #f2f2eb;
   padding: 10px;
   border-radius: 4px;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom:30px;
   margin-top: 0;
@@ -98,4 +99,33 @@
 }
 .btn-plano-basico:hover {
   scale: 1.05;
+}
+
+/* TITULOS DOS PLANOS */
+.planos-titulo {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #1f818c;
+  width: 100%;                /* ocupa toda a largura do container */
+}
+.planos-container-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  justify-content: center;
+  align-items: stretch; /* faz todos os boxes terem a mesma altura */
+  width: 100%;
+}
+.plano-box {
+  background: #f2f2eb;
+  width: 550px;
+  border-radius: 12px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;      /* ocupa toda a altura do flex container */
+  min-height: 520px; /* ajuste conforme necessário para garantir altura mínima */
 }

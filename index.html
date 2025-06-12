@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contabiliza Mais</title>
+    <title>Contabiliza Melhor</title>
     <link rel="icon" href="/img/miniAzul.svg" type="image/x-icon" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/Header.css" />
@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="/css/section2.css" />
     <link rel="stylesheet" href="/css/section3.css" />
     <link rel="stylesheet" href="/css/section4.css" />
+    <link rel="stylesheet" href="/css/section5.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/media1.css" />
+    <link rel="stylesheet" href="/css/media2.css" />
     <script src="/header.js"></script>
+    <script src="/perguntas.js"></script>
+    <script src="/cidades.js"></script>
   </head>
 
   <body>
@@ -39,13 +44,22 @@
     </header>
     <div class="header-spacer"></div>
     <section class="servicos-section1 bg-branco">
-      <h1>A sua contabilidade muito <span class="destaque">Melhor</span>.</h1>
-      <p>Temos as melhores soluções contábeis para a sua empresa.</p>
+      <div class="servicos-bg">
+        <div class="servicos-bg-texto">
+          <h1>
+            A sua contabilidade muito <span class="destaque">Melhor</span>.
+          </h1>
+          <p>Temos as melhores soluções contábeis para a sua empresa.</p>
+        </div>
+        <div class="servicos-bg-imagem"></div>
+      </div>
     </section>
     <section class="quatro-boxes-section">
       <div class="servicos-section2">
-        <h2 class="quatro-boxes-titulo">xxxx</h2>
-        <p class="quatro-boxes-subtitulo">yyy</p>
+        <h2 class="quatro-boxes-titulo">
+          Independente do momento que você esteja, nós podemos te ajudar.
+        </h2>
+
         <div class="quatro-boxes-container">
           <div class="quatro-box">
             <h1 class="box-titulo">Transforme seu MEI em ME conosco!</h1>
@@ -90,73 +104,223 @@
         </div>
       </div>
     </section>
-    <section class="servicos-section3">
-      <div class="servicos3-box">
-        <h2 class="servicos3-titulo">Serviços que nós oferecemos para você</h2>
-        <p>
-          Contabilidade Completa. Todas as obrigações contábeis com a
-          Prefeitura, Receita Federal e Estadual.
-        </p>
-        <p>
-          Abertura da empresa gratuita. Você só vai precisar pagar as taxas do
-          governo e realizar os processos físicos.
-        </p>
-        <p>
-          Certificado Digital. Nós oferecemos o certificado digital gratúito
-          para a sua empresa no primeiro ano.
-        </p>
-        <p>
-          Consultoria Contábil. Oferecemos apoio e orientação para que a sua
-          empresa consiga otimizar os gastos tributários
-        </p>
-        <p>
-          Declaração de IRPF dos sócios. Fazemos a declaração de Imposto de
-          Renda dos sócios da empresa, sem custo adicional.
-        </p>
+    <section class="section-cidades">
+      <div class="cidades-box">
+        <h2 class="cidades-titulo">Cidades que atendemos</h2>
+        <div class="cidades-carousel">
+          <button class="carousel-btn prev" aria-label="Anterior">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="carousel-track">
+            <div class="cidade-item active">
+              <img src="/img/sp.jpg" alt="São Paulo" class="cidade-img" />
+              <h3>São Paulo</h3>
+              <p>Atendimento completo na capital paulista.</p>
+            </div>
+            <div class="cidade-item">
+              <img src="/img/rj.jpg" alt="Rio de Janeiro" class="cidade-img" />
+              <h3>Rio de Janeiro</h3>
+              <p>Somos especialistas no mercado de contabilidade carioca.</p>
+            </div>
+            <div class="cidade-item">
+              <img src="/img/mg.jpg" alt="Belo Horizonte" class="cidade-img" />
+              <h3>Belo Horizonte</h3>
+              <p>Suporte dedicado para empresas mineiras.</p>
+            </div>
+          </div>
+          <button class="carousel-btn next" aria-label="Próximo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 6l6 6-6 6"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <section class="planos-section">
       <div class="planos-container">
-        <div class="plano-box">
-          <h3 class="plano-titulo">Plano Básico</h3>
-          <ul class="plano-lista">
-            <li>Contabilidade Completa</li>
-            <li>Certificado Digital Gratúito no primeiro ano</li>
-            <li>Atendimento via Whatsapp</li>
-            <li>Atendimento via Telefone</li>
-            <li>Limite de 2 Notas Fiscais por Mês</li>
-            <li>Importação e Conciliação de extrato bancário de até 1 conta</li>
-            <li>Pró-labore dos Sócios</li>
-            <li>Faturamento mensal de até R$20.000,00</li>
-          </ul>
-          <a href="/index.html" class="btn-plano-basico"
-            >Conheça o plano básico</a
-          >
+        <h1 class="planos-titulo">Nossos Planos</h1>
+        <div class="planos-container-boxes">
+          <div class="plano-box">
+            <h3 class="plano-titulo">Plano Básico</h3>
+            <ul class="plano-lista">
+              <li>Contabilidade Completa</li>
+              <li>Certificado Digital Gratúito no primeiro ano</li>
+              <li>Atendimento via Whatsapp</li>
+              <li>Atendimento via Telefone</li>
+              <li>Limite de 2 Notas Fiscais por Mês</li>
+              <li>
+                Importação e Conciliação de extrato bancário de até 1 conta
+              </li>
+              <li>Pró-labore dos Sócios</li>
+              <li>Faturamento mensal de até R$20.000,00</li>
+            </ul>
+            <a href="/index.html" class="btn-plano-basico"
+              >Conheça o plano básico</a
+            >
+          </div>
+          <div class="plano-box">
+            <h3 class="plano-titulo">Plano Premium</h3>
+            <ul class="plano-lista">
+              <li>Contabilidade Completa</li>
+              <li>Certificado Digital Gratúito no primeiro ano</li>
+              <li>Abertura de empresa grátis</li>
+              <li>Declaração do IRPF dos Sócios</li>
+              <li>
+                Agendamento de emissão de notas e cronograma de pagamentos
+              </li>
+              <li>Consultoria Contábil</li>
+              <li>Atendimento via Whatsapp</li>
+              <li>Atendimento via Telefone</li>
+              <li>Atendimento via Assessor</li>
+              <li>Reuniões Online conforme necessidade</li>
+              <li>Limite de 12 Notas por mês</li>
+              <li>Emissão de Notas feita pela nossa equipe</li>
+              <li>
+                Importação e Conciliação de extrato bancário de até 2 contas
+              </li>
+              <li>Pró-labore dos Sócios</li>
+              <li>Faturamento mensal de até R$25.000,00</li>
+            </ul>
+            <a href="/index.html" class="btn-plano-basico"
+              >Conheça o plano Premium</a
+            >
+          </div>
         </div>
-        <div class="plano-box">
-          <h3 class="plano-titulo">Plano Premium</h3>
-          <ul class="plano-lista">
-            <li>Contabilidade Completa</li>
-            <li>Certificado Digital Gratúito no primeiro ano</li>
-            <li>Abertura de empresa grátis</li>
-            <li>Declaração do IRPF dos Sócios</li>
-            <li>Agendamento de emissão de notas e cronograma de pagamentos</li>
-            <li>Consultoria Contábil</li>
-            <li>Atendimento via Whatsapp</li>
-            <li>Atendimento via Telefone</li>
-            <li>Atendimento via Assessor</li>
-            <li>Reuniões Online conforme necessidade</li>
-            <li>Limite de 12 Notas por mês</li>
-            <li>Emissão de Notas feita pela nossa equipe</li>
-            <li>
-              Importação e Conciliação de extrato bancário de até 2 contas
-            </li>
-            <li>Pró-labore dos Sócios</li>
-            <li>Faturamento mensal de até R$25.000,00</li>
-          </ul>
-          <a href="/index.html" class="btn-plano-basico"
-            >Conheça o plano Premium</a
-          >
+      </div>
+    </section>
+    <section class="section-duvidas">
+      <div class="duvidas-box">
+        <h2 class="duvidas-titulo">Perguntas mais frequentes</h2>
+        <div class="duvidas-perguntas">
+          <div class="duvida-item">
+            <p>
+              Contabilidade Completa. Todas as obrigações contábeis com a
+              Prefeitura, Receita Federal e Estadual.
+              <button class="duvida-toggle" aria-label="Expandir">
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M6 9l5 5 5-5"
+                      stroke="#1f818c"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div class="duvida-resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              esse.
+            </div>
+          </div>
+          <div class="duvida-item">
+            <p>
+              Contabilidade Completa. Todas as obrigações contábeis com a
+              Prefeitura, Receita Federal e Estadual.
+              <button class="duvida-toggle" aria-label="Expandir">
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M6 9l5 5 5-5"
+                      stroke="#1f818c"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div class="duvida-resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              esse.
+            </div>
+          </div>
+          <div class="duvida-item">
+            <p>
+              Contabilidade Completa. Todas as obrigações contábeis com a
+              Prefeitura, Receita Federal e Estadual.
+              <button class="duvida-toggle" aria-label="Expandir">
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M6 9l5 5 5-5"
+                      stroke="#1f818c"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div class="duvida-resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              esse.
+            </div>
+          </div>
+          <div class="duvida-item">
+            <p>
+              Contabilidade Completa. Todas as obrigações contábeis com a
+              Prefeitura, Receita Federal e Estadual.
+              <button class="duvida-toggle" aria-label="Expandir">
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M6 9l5 5 5-5"
+                      stroke="#1f818c"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div class="duvida-resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              esse.
+            </div>
+          </div>
+          <div class="duvida-item">
+            <p>
+              Contabilidade Completa. Todas as obrigações contábeis com a
+              Prefeitura, Receita Federal e Estadual.
+              <button class="duvida-toggle" aria-label="Expandir">
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M6 9l5 5 5-5"
+                      stroke="#1f818c"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div class="duvida-resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              esse.
+            </div>
+          </div>
         </div>
       </div>
     </section>
