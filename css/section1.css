@@ -44,7 +44,7 @@
 }
 /* texto sob a imagem */
 .servicos-bg-texto {
-    flex: 1 1 100%;
+    flex: 1 1 180%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

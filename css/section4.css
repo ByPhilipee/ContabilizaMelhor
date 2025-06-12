@@ -115,7 +115,7 @@
   flex-direction: row;
   gap: 28px;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-start;
   width: 100%;
   flex-wrap: wrap; /* permite quebrar se faltar espaço, mas mantém lado a lado em telas grandes */
 }
